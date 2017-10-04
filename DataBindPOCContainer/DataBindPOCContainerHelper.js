@@ -21,7 +21,7 @@
 		var questions = [
 			{
 				text: "What is your favorite color?",
-				answer: "cheese",
+				answer: "",
 				options: [
 					{
 						label: "Blue",
@@ -38,7 +38,7 @@
 			},
 			{
 				text: "What is your favorite animal?",
-				answer: "cheese",
+				answer: "",
 				options: [
 					{
 						label: "Dog",
@@ -55,6 +55,11 @@
 			}
 		];
 
+		questions.forEach(function(question) {
+			question.answer = question.options[0].value;
+		});
+
+		console.log("questions", questions);
 		cmp.set("v.questions", questions);
 	}
 })
