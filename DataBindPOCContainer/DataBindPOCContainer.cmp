@@ -1,0 +1,13 @@
+<aura:component description="DataBindPOCContainer"
+	controller="QuestionAuraService"
+	access="global"
+	implements="flexipage:availableForAllPageTypes">
+
+	<aura:attribute name="questions" type="Array" />
+
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+	<c:DataBindPOCDataDisplay questions="{!v.questions}" title="Data Container" />
+
+	<c:DataBindPOCLayout questions="{!v.questions}" />
+</aura:component>

@@ -1,0 +1,5 @@
+<aura:component description="PrimitiveDataBindPOCLayout" >
+	<aura:attribute name="textInput" type="String" />
+
+	<c:PrimitiveDataBindPOCView textInput="{!v.textInput}" />
+</aura:component>

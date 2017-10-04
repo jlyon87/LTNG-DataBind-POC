@@ -1,0 +1,10 @@
+<aura:component description="DataBindPOCLayout" >
+	<aura:attribute name="questions" type="Array" />
+
+	<div class="slds-grid slds-wrap slds-grid_pull-padded" >
+
+		<div class="slds-size_1-of-1" >
+			<c:DataBindPOCQuestionnaire questions="{!v.questions}"/>
+		</div>
+	</div>
+</aura:component>

@@ -1,0 +1,6 @@
+<aura:component description="PrimitiveDataBindPOCView" >
+	<aura:attribute name="textInput" type="String" />
+
+	<c:PrimitiveDataBindPOCDisplay textInput="{!v.textInput}" title="View" />
+	<c:PrimitiveDataBindPOCForm textInput="{!v.textInput}" />
+</aura:component>

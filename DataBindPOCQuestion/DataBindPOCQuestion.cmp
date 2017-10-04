@@ -1,0 +1,18 @@
+<aura:component description="DataBindPOCQuestion" >
+	<aura:attribute name="question" type="Object" />
+
+	<div>
+		{!v.question.text}
+	</div>
+	<div>
+		{!v.question.answer}
+	</div>
+	<div>
+		{!v.question.options[0].label} - {!v.question.options[1].label} - {!v.question.options[2].label}
+	</div>
+	<ui:inputSelect value="{!v.question.answer}" label="{!v.question.text}" >
+		<aura:iteration var="opt" items="{!v.question.options}">
+			<option text="{!opt.label}" value="{!opt.value}" />
+		</aura:iteration>
+	</ui:inputSelect>
+</aura:component>

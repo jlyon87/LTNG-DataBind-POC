@@ -1,0 +1,11 @@
+<aura:component description="PrimitiveDataBindPOCDisplay" >
+	<aura:attribute name="title" type="String" default="" />
+	<aura:attribute name="textInput" type="String" />
+
+	<div>
+		{!v.title}
+	</div>
+	<div>
+		<ui:outputText value="{!v.textInput}" />
+	</div>
+</aura:component>

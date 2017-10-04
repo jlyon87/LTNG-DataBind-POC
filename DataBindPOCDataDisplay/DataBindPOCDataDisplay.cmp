@@ -1,0 +1,22 @@
+<aura:component description="DataBindPOCDataDisplay" >
+	<aura:attribute name="title" type="String" default="" />
+	<aura:attribute name="questions" type="Array" />
+
+	<!-- Display Data -->
+
+	<div class="slds-grid slds-wrap slds-p-left_large">
+		<div class="slds-size_1-of-1 slds-border_top">
+			{!v.title} v39
+		</div>
+		<div class="slds-size_1-of-1">
+			<div>{!'Text: ' + v.questions[0].text}</div>
+			<div>{!'Answer: ' + v.questions[0].answer}</div>
+			<div>Options: {!v.questions[0].options[0].label} - {!v.questions[0].options[1].label} - {!v.questions[0].options[2].label}</div>
+		</div>
+		<div class="slds-size_1-of-1 slds-border_bottom">
+			<div>{!'Text: ' + v.questions[1].text}</div>
+			<div>{!'Answer: ' + v.questions[1].answer}</div>
+			<div>Options: {!v.questions[1].options[0].label} - {!v.questions[1].options[1].label} - {!v.questions[1].options[2].label}</div>
+		</div>
+	</div>
+</aura:component>

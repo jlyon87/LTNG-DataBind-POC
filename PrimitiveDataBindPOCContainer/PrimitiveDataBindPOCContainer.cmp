@@ -1,0 +1,9 @@
+<aura:component description="PrimitiveDataBindPOCContainer"
+	access="global"
+	implements="flexipage:availableForAllPageTypes">
+
+	<aura:attribute name="textInput" type="String" />
+
+	<c:PrimitiveDataBindPOCDisplay textInput="{!v.textInput}" title="Container" />
+	<c:PrimitiveDataBindPOCLayout textInput="{!v.textInput}" />
+</aura:component>

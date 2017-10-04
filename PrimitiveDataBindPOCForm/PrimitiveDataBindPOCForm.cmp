@@ -1,0 +1,5 @@
+<aura:component description="PrimitiveDataBindPOCForm" >
+	<aura:attribute name="textInput" type="String" />
+
+	<ui:inputText value="{!v.textInput}" label="Input" updateOn="keyup" placeholder="Enter Value..." />
+</aura:component>

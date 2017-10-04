@@ -1,0 +1,18 @@
+<aura:component description="DataBindPOCQuestionnaire" >
+	<aura:attribute name="questions" type="Array" />
+
+	<div>
+		<c:DataBindPOCDataDisplay questions="{!v.questions}" title="Data Questionnaire" />
+	</div>
+
+	<c:DataBindPOCQuestion question="{!v.questions[0]}" />
+
+	<c:DataBindPOCQuestion question="{!v.questions[1]}" />
+
+	<!-- <aura:iteration var="q" items="questions" >
+		<div>
+			<div>{!q.text}</div>
+			<c:DataBindPOCQuestion question="{!q}" />
+		</div>
+	</aura:iteration> -->
+</aura:component>
